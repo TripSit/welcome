@@ -1,0 +1,90 @@
+extends layout
+
+block content
+  script.
+    function go(b) {
+      var channels,
+          nick,
+          theme = 'relaxed';
+
+      switch(b) {
+        case 'assistance':
+          channels = '#tripsit';
+          nick = 'TripSitMe?';
+          theme = 'mini';
+          break;
+        case 'sanctuary':
+          channels = '#sanctuary'
+          nick = 'Tripper?';
+          break;
+        case 'stims':
+          channels = '#stims'
+          nick = 'Stimmer?';
+          break;
+        case 'opiates':
+          channels = '#opiates'
+          nick = 'Opiater?';
+          break;
+        case 'psychonaut':
+          channels = '#psychonaut'
+          nick = 'Psychonaut?';
+          break;
+        case 'general':
+          channels = '#home,#sanctuary,#drugs'
+          nick = 'TripGuy?';
+          break;
+        default: break;
+      }
+      
+      var manualNick = document.getElementById('nick').value;
+      if(manualNick != '') {
+        nick = manualNick; 
+      }
+
+      window.location = 'https://chat.tripsit.me/chat/?a=1&theme='+theme+'&nick='+nick+'&'+channels;
+    }
+  .container-fluid(style="margin-top:2%;")
+    .jumbotron
+      center 
+        .bs-callout
+          p(style='font-size:24px;') Welcome to TripSit Chat, you're with friends here.
+          p(style='font-size:16px;') 
+            a(href="http://tripsit.me/tripsit-chat-to-become-18-only/") TripSit chat will become 18+ only from 2016-05-11
+          p(style='font-size:16x;') Note: Assistance and Sanctuary links will not be affected
+          br
+          input#nick.form-control(placeholder='Optional: Choose a nickname', style='width:33%')
+      table(width='100%')
+        tr
+          td(width='33%' style='text-align:center')
+            button.btn.bs-callout.bsbutton.bs-callout-gen(onclick='javascript:go("general")')
+              h1 General Chat
+              p.subtex Click here for the general community chat, about life, drugs or anything else.
+          td(width='33%' style='text-align:center')
+            button.btn.bs-callout.bsbutton.bs-callout-ass(onclick='javascript:go("assistance")')
+              h1 Assistance
+              p.subtex Taken drugs or have questions about taking drugs? Concerned or have any questions? Click here.
+          td(width='33%', style='text-align:center')
+            button.btn.bs-callout.bsbutton.bs-callout-trip(onclick='javascript:go("sanctuary")')
+              h1 Sanctuary
+              p.subtex Click here if you're in need of a slower, calmer chat. Great if you're tripping or just need to relax.
+
+      .bs-callout.bs-callout(style='margin-bottom:5px;')
+        h4(style='text-align:center;margin-bottom:0px;') Other Channels
+      center 
+        table(width='60%' style='margin-top:0px;')
+          tr
+            td(width='33%' style='text-align:center')
+              button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
+                h3 Stim Chat
+            td(width='33%' style='text-align:center')
+              button.btn.bs-callout.bsbutton.bs-callout-psychedelic(onclick='javascript:go("opiates")')
+                h3 Opiates Chat
+            td(width='33%' style='text-align:center')
+              button.btn.bs-callout.bsbutton.bs-callout-unsafe(onclick='javascript:go("psychonaut")')
+                h3 Psychonautics Chat
+      center
+        .bs-callout.bs-callout
+          p(style='font:14px;') Remember to be kind to your fellow trippers, and don't name drug sources. Read the full rules 
+            a(href='http://wiki.tripsit.me/wiki/Rules') here
+            span .
+        a(href='https://chat.tripsit.me/chat/') Click here for the regular login page
