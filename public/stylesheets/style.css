@@ -197,6 +197,12 @@ font-size:15px;
 .bs-callout-stim {
 background-color: #EED5D2;
 }
+.bs-callout-caution{
+background-color: #daefff;
+}
+.bs-callout-benzo{
+background-color:#ddd;
+}
 /* Themes for different contexts */
 .bs-callout-danger {
   background-color: #fdc9cc;
@@ -230,9 +236,6 @@ background-color: #EED5D2;
 .bs-callout-dissociative {
 background-color:#B23609;
 /*border-color:#9b59b6;*/
-}
-.bs-callout-benzo {
-border-color:#000;
 }
 .bs-callout-research {
 border-color:#EC971F;

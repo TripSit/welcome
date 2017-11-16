@@ -9,8 +9,8 @@ block content
 
       switch(b) {
         case 'assistance':
-          channels = '#tripsit';
-          nick = 'TripSitMe?';
+          channels = "#{achan}";
+          nick = "#{anick}";
           theme = 'mini';
           break;
         case 'sanctuary':
@@ -30,8 +30,12 @@ block content
           nick = 'Psychonaut?';
           break;
         case 'general':
-          channels = '#home,#sanctuary,#drugs'
+          channels = '#lounge,#sanctuary,#drugs'
           nick = 'TripGuy?';
+          break;
+        case 'benzos':
+          channels = '#benzos'
+          nick = 'Benzer?';
           break;
         default: break;
       }
@@ -70,13 +74,16 @@ block content
       center 
         table(width='60%' style='margin-top:0px;')
           tr
-            td(width='33%' style='text-align:center')
+            td(width='20%' style='text-align:center')
               button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
                 h3 Stim Chat
-            td(width='33%' style='text-align:center')
+            td(width='20%' style='text-align:center')
               button.btn.bs-callout.bsbutton.bs-callout-psychedelic(onclick='javascript:go("opiates")')
                 h3 Opiates Chat
-            td(width='33%' style='text-align:center')
+            td(width='20%' style='text-align:center')
+              button.btn.bs-callout.bsbutton.bs-callout-benzo(onclick='javascript:go("benzos")')
+                h3 Benzos chat
+            td(width='20%' style='text-align:center')
               button.btn.bs-callout.bsbutton.bs-callout-unsafe(onclick='javascript:go("psychonaut")')
                 h3 Psychonautics Chat
       center
