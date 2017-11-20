@@ -12,13 +12,12 @@ block content
 
     function go(b) {
       var channels,
-          nick,
+          nick = "#{anick}",
           theme = 'relaxed';
 
       switch(b) {
         case 'assistance':
           channels = "#{achan}";
-          nick = "#{anick}";
           theme = 'mini';
           break;
         case 'helper':
@@ -27,27 +26,21 @@ block content
           break;
         case 'sanctuary':
           channels = '#sanctuary'
-          nick = 'Tripper?';
           break;
         case 'stims':
           channels = '#stims'
-          nick = 'Stimmer?';
           break;
         case 'opiates':
           channels = '#opiates'
-          nick = 'Opiater?';
           break;
         case 'psychonaut':
           channels = '#psychonaut'
-          nick = 'Psychonaut?';
           break;
         case 'general':
           channels = '#lounge,#sanctuary,#drugs'
-          nick = 'TripGuy?';
           break;
         case 'benzos':
           channels = '#benzos'
-          nick = 'Benzer?';
           break;
         default: break;
       }
