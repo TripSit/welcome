@@ -2,6 +2,14 @@ extends layout
 
 block content
   script.
+    function clickCheckbox(element) {
+      if(element.checked) {
+        $('#tripsitterjoin').removeClass('disabled');
+      } else {
+        $('#tripsitterjoin').addClass('disabled');
+      }
+    }
+
     function go(b) {
       var channels,
           nick,
@@ -12,6 +20,10 @@ block content
           channels = "#{achan}";
           nick = "#{anick}";
           theme = 'mini';
+          break;
+        case 'helper':
+          channels = "#tripsit,#tripsit1,#tripsit2,#tripsit3,#tripsitters";
+          nick = "#{anick}-ts";
           break;
         case 'sanctuary':
           channels = '#sanctuary'
@@ -68,7 +80,34 @@ block content
             button.btn.bs-callout.bsbutton.bs-callout-trip(onclick='javascript:go("sanctuary")')
               h1 Sanctuary
               p.subtex Click here if you're in need of a slower, calmer chat. Great if you're tripping or just need to relax.
+      center
+        button.btn.bsbutton.bs-callout.bs-callout-benzo(style='width:33%' data-toggle='modal' data-target='#hModal')
+          h4 Here to Help
+          p.subtex Click here to help other trippers
 
+      div.modal.fade(id="hModal", role="dialog")
+        div.modal-dialog
+          div.modal-content
+            .modal-header
+              button(type="button", class="close", data-dismiss="modal") x
+              h3 Helping Trippers
+            .modal-body
+              ul
+                li You will join be joined to the four #tripsit assistance channels.
+                li Users will join these channels and need some help.
+                li You will also be joined to #tripsitters, where you can ask for help from other tripsitters and staff members.
+                li Remember to be kind, and that no advice is better than wrong advice. If you don't know something, ask in #tripsitters.
+
+              .checkbox
+                label
+                input(style='width:20px;height:20px;' type='checkbox', name='checkbox', onclick='clickCheckbox(this)')
+                |   Please confirm that you have 
+                a(href="https://wiki.tripsit.me/wiki/How_To_Tripsit_Online") read our guide
+                span  on how to tripsit people online.
+            .modal-footer
+              button#tripsitterjoin.btn.bs-callout.bsbutton.bs-callout-trip.disabled(onclick='javascript:go("helper")')
+                h3 Join TripSit as a helper
+              
       .bs-callout.bs-callout(style='margin-bottom:5px;')
         h4(style='text-align:center;margin-bottom:0px;') Other Channels
       center 
