@@ -9,16 +9,16 @@ block content
         $('#tripsitterjoin').addClass('disabled');
       }
     }
-
+    var color = 'default';
     function go(b) {
       var channels,
           nick = "#{anick}",
-          theme = 'relaxed';
+          theme = color;
 
       switch(b) {
         case 'assistance':
           channels = "#{achan}";
-          theme = 'mini';
+          theme = color;
           break;
         case 'helper':
           channels = "#tripsit,#tripsit1,#tripsit2,#tripsit3,#tripsitters";
@@ -55,28 +55,32 @@ block content
   .container-fluid(style="margin-top:2%;")
     .jumbotron
       center 
-        .bs-callout
-          p(style='font-size:24px;') Welcome to TripSit Chat, you're with friends here.
-          br
-          input#nick.form-control(placeholder='Optional: Choose a nickname', style='width:33%')
-      table(width='100%')
-        tr
-          td(width='33%' style='text-align:center')
+       .row
+        .col-xs-12.col-md-4.col-md-offset-4
+          .bs-callout
+            p(style='font-size:24px;line-height: 140%;') Welcome to TripSit Chat - You're with friends here.
+            br
+            input#nick.form-control(placeholder='Optional: Choose a nickname')
+       .row  
+        .col-xs-12.col-md-4
             button.btn.bs-callout.bsbutton.bs-callout-gen(onclick='javascript:go("general")')
               h1 General Chat
               p.subtex Click here for the general community chat, about life, drugs or anything else.
-          td(width='33%' style='text-align:center')
+              
+        .col-xs-12.col-md-4
             button.btn.bs-callout.bsbutton.bs-callout-ass(onclick='javascript:go("assistance")')
               h1 Assistance
               p.subtex Taken drugs or have questions about taking drugs? Concerned or have any questions? Click here.
-          td(width='33%', style='text-align:center')
+        .col-xs-12.col-md-4
             button.btn.bs-callout.bsbutton.bs-callout-trip(onclick='javascript:go("sanctuary")')
               h1 Sanctuary
               p.subtex Click here if you're in need of a slower, calmer chat. Great if you're tripping or just need to relax.
       center
-        button.btn.bsbutton.bs-callout.bs-callout-benzo(style='width:33%' data-toggle='modal' data-target='#hModal')
-          h4 Here to Help
-          p.subtex Click here to help other trippers
+       .row
+        .col-xs-12.col-md-4.col-md-offset-4
+          button.btn.bsbutton.bs-callout.bs-callout-benzo(data-toggle='modal' data-target='#hModal')
+            h4 Here to Help
+            p.subtex Click here to help other trippers
 
       div.modal.fade(id="hModal", role="dialog")
         div.modal-dialog
@@ -104,18 +108,18 @@ block content
       .bs-callout.bs-callout(style='margin-bottom:5px;')
         h4(style='text-align:center;margin-bottom:0px;') Other Channels
       center 
-        table(width='60%' style='margin-top:0px;')
-          tr
-            td(width='20%' style='text-align:center')
+        .container
+          .row
+            .col-xs-12.col-md-3
               button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
                 h3 Stim Chat
-            td(width='20%' style='text-align:center')
+            .col-xs-12.col-md-3
               button.btn.bs-callout.bsbutton.bs-callout-psychedelic(onclick='javascript:go("opiates")')
                 h3 Opiates Chat
-            td(width='20%' style='text-align:center')
+            .col-xs-12.col-md-3
               button.btn.bs-callout.bsbutton.bs-callout-benzo(onclick='javascript:go("benzos")')
                 h3 Benzos chat
-            td(width='20%' style='text-align:center')
+            .col-xs-12.col-md-3
               button.btn.bs-callout.bsbutton.bs-callout-unsafe(onclick='javascript:go("psychonaut")')
                 h3 Psychonautics Chat
       center
@@ -123,4 +127,4 @@ block content
           p(style='font:14px;') Remember to be kind to your fellow trippers, and don't name drug sources. Read the full rules 
             a(href='http://wiki.tripsit.me/wiki/Rules') here
             span .
-        a(href='https://chat.tripsit.me/chat/') Click here for the regular login page
+        a(href='https://chat.tripsit.me/chat/?a=1&theme=' + color) Click here for the regular login page
