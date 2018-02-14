@@ -1,0 +1,296 @@
+/* Dark theme basic css
+main background color: #1f2127
+secondary background color:  #1F1F1F;
+font color: #cccccc;
+color: #cccccc;
+text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+glossary color and border: #02b396
+*/
+
+body {
+  background-color: #1f2127;
+  color: #cccccc;
+  line-height: 120%;
+}
+/* place holder while the theme is applied in the background */
+
+
+.jumbotron{
+  background-color: #454545;
+  border: 0px !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-inverse {
+  background-image: none;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a {
+   border-right: 0px;
+   border-left: 0px;
+}
+
+
+.navbar {
+  background-color: #000;
+}
+
+.navbar-inverse {
+  background-image: none;
+  color: white;
+}
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+/*
+ * Global add-ons
+ */
+
+.glossary {
+  border-bottom: 1px #02b396 dotted;
+  color: #02b396;
+}
+
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+/* Switch that toggles theme */
+
+#switchText {
+  color: #3a8bcc;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 8px;
+}
+
+
+
+.slider:before {
+  background-color: #3a8bcc;
+}
+
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2e3338;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+
+/* text style and padding for switch */
+.nav-text{
+  color: #cccccc;
+}
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+/* Base styles (regardless of theme) */
+.bs-callout {
+  background-color: #454545;
+}
+
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+ 
+.bs-callout-caution {
+  background-color: #fffacb;
+  border-color: #827700;
+}
+.subtex {
+  line-height:150%;
+  font-size:10px;
+}
+.bsbutton {
+  border-radius:25px;
+  height:100%;
+  margin:5px;
+}
+.jumbotron p {
+font-size:15px;
+}
+
+/* Themes for different contexts */
+.bs-callout-lowdec {
+  background-color: #d8effe;
+  border-color: #00426c;
+}
+.bs-callout-gen {
+  background-color: #34b6e1;
+}
+
+.bs-callout-stim {
+background-color: #3FC553;
+}
+.bs-callout-caution{
+background-color: #daefff;
+}
+.bs-callout-benzo{
+background-color: #db9c4a;
+}
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fdc9cc;
+  border-color: #7f0006;
+}
+.bs-callout-unsafe {
+  background-color: #34b6e1;;
+}
+.bs-callout-lowinc {
+  background-color: #cbf0d1;
+}
+.bs-callout-trip {
+  background-color: #45d45b;
+}
+.bs-callout-ss {
+  background-color: #dfd3ec;
+}
+.bs-callout-ass {
+  background-color: #b282e7;
+}
+.bs-callout-psychedelic {
+ background-color: #A478D4;
+  /*background-color: #00A388;*/
+}
+.bs-callout-opioid {
+ background-color: #CCFFCC;
+}
+.bs-callout-stimulant {
+  background-color: #BFEFFF;
+}
+.bs-callout-dissociative {
+background-color:#B23609;
+/*border-color:#9b59b6;*/
+}
+.bs-callout-research {
+border-color:#EC971F;
+background-color:#EC971F;
+}
+.bs-callout-habit {
+background-color:#e67e22;
+}
+.bs-callout-depress{
+background-color:#C9302C;
+border-color:#C9302C;
+}
+.bs-callout-tentative {
+border-color:#FFFF9D;
+}
+
+.catcallout {
+  background-color: #FFF;
+}
+
+.phaedra-colors .label {
+  color: #001713;
+}
+.phaedra-colors .label-default {
+  background-color: #95a5a6;
+}
+.phaedra-colors .label-default[href]:hover,
+.phaedra-colors .label-default[href]:focus {
+  background-color: #7f8c8d;
+}
+.label-psychedelic {
+  background-color: #00A388;
+}
+.phaedra-colors .label-primary[href]:hover,
+.phaedra-colors .label-primary[href]:focus {
+  background-color: #007D68;
+}
+.label-empathogen {
+  background-color: #79BD8F;
+}
+.phaedra-colors .label-success[href]:hover,
+.phaedra-colors .label-success[href]:focus {
+  background-color: #659E78;
+}
+.phaedra-colors .label-info {
+  background-color: #BEEB9F;
+}
+.phaedra-colors .label-info[href]:hover,
+.phaedra-colors .label-info[href]:focus {
+  background-color: #A5CC8A;
+}
+.label-tentative {
+  background-color: #FFFF9D;
+  color: #001713;
+}
+.phaedra-colors .label-warning[href]:hover,
+.phaedra-colors .label-warning[href]:focus {
+  background-color: #D1D181;
+}
+.phaedra-colors .label-danger {
+  background-color: #FF6138;
+}
+.phaedra-colors .label-danger[href]:hover,
+.phaedra-colors .label-danger[href]:focus {
+  background-color: #D6512F;
+}
+
+.label-disso {
+  background-color: #9b59b6;
+}
+
+.label-habit {
+  background-color: #e67e22;
+}
+
+.btn{
+    text-shadow: none;
+    color: #2d2828;
+  
+}
+.btn:hover {
+  color: #f1f1f8e6;
+}
+
+.col-xs-12.col-md-3 ,h3 {
+  margin: 0 auto;
+}
