@@ -30,7 +30,7 @@ body
        .container-fluid
         .navbar-header
            
-           button.navbar-toggle.collapsed#collapse-right(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse", aria-expanded="false")
+           button.navbar-toggle.collapsed#collapse-right(type="button", data-toggle="collapse", data-target="#bs-navbar-collapse", aria-expanded="false")
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
@@ -42,7 +42,8 @@ body
               input(type="checkbox", onClick="changeCss()", id="switch", value="Style") 
               span.slider 
                p#switchText ON       OFF
-        ul.nav.navbar-nav.navbar-right
+        .collapse.navbar-collapse#bs-navbar-collapse
+         ul.nav.navbar-nav.navbar-right
             li.choice
               a(href='http://tripsit.me/about') About
             li.choice
