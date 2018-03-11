@@ -10,6 +10,7 @@ console.log(req.headers);
   request.get('http://tripbot.tripsit.me/api/cspeed/getCounts', {
     'json': true
   }, function(request, response, body) {
+    if (response.statusCode == 201 || response.statusCode == 200) {
     var leastCount = Infinity;
     var leastChan = '#tripsit';
     _.each(body.data[0], function(count, chan) {
@@ -18,6 +19,10 @@ console.log(req.headers);
         leastCount = count;
       }
     });
+    
+    } else {
+      console.log('error conecting to API: ' + response.statusCode);
+    }
     res.render('index', { title: 'Express', achan: leastChan, anick: Moniker.choose() });
   });
 });
