@@ -39,9 +39,6 @@ block content
         case 'general':
           channels = '#lounge,#sanctuary,#drugs'
           break;
-        case 'benzos':
-          channels = '#benzos'
-          break;
         default: break;
       }
       
@@ -110,16 +107,13 @@ block content
       center 
         .container
           .row
-            .col-xs-12.col-md-3
+            .col-xs-12.col-md-4
               button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
                 h3 Stim Chat
-            .col-xs-12.col-md-3
+            .col-xs-12.col-md-4
               button.btn.bs-callout.bsbutton.bs-callout-psychedelic(onclick='javascript:go("opiates")')
                 h3 Opiates Chat
-            .col-xs-12.col-md-3
-              button.btn.bs-callout.bsbutton.bs-callout-benzo(onclick='javascript:go("benzos")')
-                h3 Benzos chat
-            .col-xs-12.col-md-3
+            .col-xs-12.col-md-4
               button.btn.bs-callout.bsbutton.bs-callout-unsafe(onclick='javascript:go("psychonaut")')
                 h3 Psychonautics Chat
       center
