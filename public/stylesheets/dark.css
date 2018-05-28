@@ -130,6 +130,16 @@ input:checked + .slider:before {
 
 
 /* Base styles (regardless of theme) */
+.alert-warning {
+  background-color: rebeccapurple;
+  background-image: linear-gradient(to bottom,#7c00b6 0,#9105c9 100%);
+  border-color: #7c00b6;
+  color: white;
+
+}
+
+
+
 .bs-callout {
   background-color: #454545;
 }
