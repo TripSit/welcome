@@ -19,7 +19,7 @@ console.log(req.headers);
         leastCount = count;
       }
     });
-    
+
     } else {
       console.log('error conecting to API: ' + response.statusCode);
     }
