@@ -74,3 +74,11 @@ body
 
        .loader#coverScreen
     block content
+script.
+   //Thanks mokay <3
+   var referrer = document.referrer;
+   console.log("Referrer: " + referrer);
+   const queryString = window.location.search;
+   if (referrer == "https://beta.tripsit.me/" && queryString == "?assistance"){
+      go("assistance");
+   }
