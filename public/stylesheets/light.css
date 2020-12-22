@@ -1,7 +1,10 @@
 body {
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  line-height: 120%;
+  /*line-height: 120%;*/
+}
+.banner {
+   max-width: 100%;
 }
 .loader {
    width: 100%;
@@ -223,11 +226,22 @@ input:checked + .slider:before {
 .jumbotron p {
 font-size:15px;
 }
+
 .btn{
     white-space: normal;
     margin:5px;
     width:100%;
-    }
+    text-shadow: none;
+    color: #2d2828;
+    transform: scale(1.0);
+    transition: transform 1s;
+}
+
+.btn:hover {
+  color: #f1f1f8e6;
+  transform: scale(1.1);
+  transition: transform 1s;
+}
 
 /* Themes for different contexts */
 .bs-callout-lowdec {
@@ -235,18 +249,49 @@ font-size:15px;
   border-color: #00426c;
 }
 .bs-callout-gen {
-  background-color: #d8effe;
-  padding-bottom: 37px;
+background-color: #d1920a;
+ /* background-color: #d8effe;*/
+  /*padding-bottom: 37px;*/
+}
+.bs-callout-stim {
+background-color: #dbd82a;/*#e8e66b;#599486;*/
 }
 
-.bs-callout-stim {
-background-color: #EED5D2;
+.bs-callout-opiate {
+background-color: #a6582e;
 }
+/*
+.bs-callout-opiate:hover {
+color: #9bd192 !important;
+}
+*/
 .bs-callout-caution{
 background-color: #daefff;
 }
-.bs-callout-benzo{
-background-color:#ddd;
+.bs-callout-here-help{
+background-color: #c7db44;
+}
+.bs-callout-psychonaut{
+background-color: #4a196e;
+color: #d5bee6 !important;
+}
+.bs-callout-psychonaut:hover{
+color: white !important;
+}
+.bs-callout-music{
+/*background-color: #d5bee6;*/
+background-color: #c862f0;
+}
+/*
+.bs-callout-music:hover{
+color: #4a196e !important;
+}
+*/
+.bs-callout-contrib{
+background-color: #34b6e1;
+}
+.bs-callout-help{
+background-color: #34b6e1;
 }
 /* Themes for different contexts */
 .bs-callout-danger {
@@ -260,13 +305,23 @@ background-color:#ddd;
   background-color: #cbf0d1;
 }
 .bs-callout-trip {
-  background-color: #cbf0d1;
+  /*background-color: #cbf0d1;*/
+background-color: #45d45b;
+filter: hue-rotate(0);
+transform: scale(1.0);
+transition: filter 3s, transform 1s;
+}
+.bs-callout-trip:hover{
+filter: hue-rotate(360deg);
+transform: scale(1.1);
+transition: filter 3s, transform 1s;
 }
 .bs-callout-ss {
   background-color: #dfd3ec;
 }
 .bs-callout-ass {
-  background-color: #dfd3ec;
+background-color: #b282e7;
+ /* background-color: #dfd3ec;*/
 }
 .bs-callout-psychedelic {
  background-color: #F8FBCC;
@@ -274,9 +329,6 @@ background-color:#ddd;
 }
 .bs-callout-opioid {
  background-color: #CCFFCC;
-}
-.bs-callout-stimulant {
-  background-color: #BFEFFF;
 }
 .bs-callout-dissociative {
 background-color:#B23609;
@@ -362,3 +414,6 @@ border-color:#FFFF9D;
   }
 }
 
+.col-xs-12.col-md-3, h3{
+    margin: 0 auto;
+}

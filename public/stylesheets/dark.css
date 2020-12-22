@@ -8,15 +8,18 @@ glossary color and border: #02b396
 */
 
 body {
-  background-color: #1f2127;
+  background-color: black;
   color: #cccccc;
-  line-height: 120%;
+  /*line-height: 120%;*/
 }
 /* place holder while the theme is applied in the background */
 
+.banner{
+  max-width: 100%;
+}
 
 .jumbotron{
-  background-color: #454545;
+  background-color: black;
   border: 0px !important;
 }
 
@@ -141,7 +144,7 @@ input:checked + .slider:before {
 
 
 .bs-callout {
-  background-color: #454545;
+  background-color: black;
 }
 
 .bs-callout code,
@@ -172,17 +175,49 @@ font-size:15px;
   border-color: #00426c;
 }
 .bs-callout-gen {
-  background-color: #34b6e1;
+  background-color: #d1920a;
 }
 
 .bs-callout-stim {
-background-color: #3FC553;
+background-color: white;
 }
+.bs-callout-stim:hover {
+color: #8a1a1a !important;
+}
+.bs-callout-opiate {
+background-color: #692704;
+color: white !important;
+}
+.bs-callout-opiate:hover {
+color: #9bd192 !important;
+} 
 .bs-callout-caution{
 background-color: #daefff;
 }
-.bs-callout-benzo{
-background-color: #db9c4a;
+.bs-callout-here-help{
+background-color: #c7db44;
+}
+.bs-callout-here-help:hover{
+color: #42356e !important;
+}
+.bs-callout-psychonaut{
+background-color: #4a196e;
+color: #d5bee6 !important;
+}
+.bs-callout-psychonaut:hover{
+color: white !important;
+}
+.bs-callout-music{
+background-color: #d5bee6;
+}
+.bs-callout-music:hover{
+color: #4a196e !important;
+}
+.bs-callout-contrib{
+background-color: #34b6e1;
+}
+.bs-callout-help{
+background-color: #34b6e1;
 }
 /* Themes for different contexts */
 .bs-callout-danger {
@@ -197,6 +232,14 @@ background-color: #db9c4a;
 }
 .bs-callout-trip {
   background-color: #45d45b;
+  filter: hue-rotate(0);
+  transform: scale(1.0);
+  transition: filter 3s, transform 1s;
+}
+.bs-callout-trip:hover {
+  filter: hue-rotate(360deg);
+  transform: scale(1.1);
+  transition: filter 3s, transform 1s;
 }
 .bs-callout-ss {
   background-color: #dfd3ec;
@@ -205,14 +248,14 @@ background-color: #db9c4a;
   background-color: #b282e7;
 }
 .bs-callout-psychedelic {
- background-color: #A478D4;
-  /*background-color: #00A388;*/
+background-color: #A478D4;
+/*background-color: #00A388;*/
 }
 .bs-callout-opioid {
- background-color: #CCFFCC;
+background-color: #CCFFCC;
 }
 .bs-callout-stimulant {
-  background-color: #BFEFFF;
+background-color: #BFEFFF;
 }
 .bs-callout-dissociative {
 background-color:#B23609;
@@ -240,6 +283,7 @@ border-color:#FFFF9D;
 .phaedra-colors .label {
   color: #001713;
 }
+
 .phaedra-colors .label-default {
   background-color: #95a5a6;
 }
@@ -295,10 +339,18 @@ border-color:#FFFF9D;
 .btn{
     text-shadow: none;
     color: #2d2828;
-  
+   /*
+    transform: scale(1.0);
+    transition: transform 1s;
+   */
 }
+
 .btn:hover {
   color: #f1f1f8e6;
+  /*
+  transform: scale(1.1);
+  transition: transform 1s;
+  */
 }
 
 .col-xs-12.col-md-3 ,h3 {
