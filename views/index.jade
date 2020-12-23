@@ -10,6 +10,7 @@ block content
       }
     }
     var color = 'default';
+    var kiwi = 'chat';
     function go(b) {
       var channels,
           nick = "#{anick}",
@@ -18,6 +19,7 @@ block content
       switch(b) {
         case 'assistance':
           channels = "#{achan}"
+          kiwi = 'chat-assistance';
           break;
         case 'helper':
           channels = "#tripsit,#tripsit1,#tripsit2,#tripsit3,#tripsitters";
@@ -55,7 +57,7 @@ block content
         nick = manualNick; 
       }
 
-      window.location = 'https://chat.tripsit.me/chat/?a=1&nick='+nick+'&'+channels;
+      window.location = 'https://chat.tripsit.me/'+kiwi+'/?a=1&nick='+nick+'&'+channels;
     }
   .container-fluid(style="margin-top:2%;")
     .alert.alert-warning(style='text-align:center') Do you use a VPN? Try using 
