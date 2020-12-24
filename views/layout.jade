@@ -35,7 +35,9 @@ body
              label.switch
               input(type="checkbox", onClick="changeCss()", id="switch", value="Style") 
               span.slider 
-               p#switchText ON       OFF
+               div#switchText
+                span.slider_on ON
+                span.slider_off OFF
         .collapse.navbar-collapse#bs-navbar-collapse
          ul.nav.navbar-nav.navbar-right
             li.choice

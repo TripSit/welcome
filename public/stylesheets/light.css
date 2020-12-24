@@ -1,3 +1,4 @@
+
 body {
   /*padding-bottom: 20px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -227,6 +228,13 @@ input:checked + .slider:before {
 font-size:15px;
 }
 
+@media screen and (min-width: 768px) {
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: xxx-large;
+  }
+}
+
 .btn{
     white-space: normal;
     margin:5px;
@@ -416,4 +424,24 @@ border-color:#FFFF9D;
 
 .col-xs-12.col-md-3, h3{
     margin: 0 auto;
+}
+
+.slider_on{
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+  .nav > li > a{
+    padding: 10px 4px;
+    line-height: 30px;
+  }
+}
+
+a:focus{
+  outline: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+  outline-offset: 0px;
 }
