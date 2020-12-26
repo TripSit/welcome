@@ -445,3 +445,26 @@ a:focus{
   outline: none;
   outline-offset: 0px;
 }
+
+.banner_header{
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../images/banner-desktop-small.png');
+}
+
+.banner_header a{
+  height: 131px;
+  display: block;
+}
+
+@media (min-width: 1921px){
+  .banner_header{
+    background-image: url('../images/banner-desktop-large.png');
+  }
+}
+
+@media (min-width: 2200px){
+  .banner_header a{
+    height: 262px;
+  }
+}
