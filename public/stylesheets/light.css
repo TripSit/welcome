@@ -1,8 +1,16 @@
+
 body {
   /*padding-bottom: 20px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*line-height: 120%;*/
 }
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .banner {
    max-width: 100%;
 }
@@ -219,12 +227,21 @@ input:checked + .slider:before {
   font-size:10px;
 }
 .bsbutton {
-  border-radius:25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   height:100%;
-  margin:5px;
+  margin: 0 20px 20px 0;
 }
 .jumbotron p {
 font-size:15px;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: xxx-large;
+  }
 }
 
 .btn{
@@ -416,4 +433,51 @@ border-color:#FFFF9D;
 
 .col-xs-12.col-md-3, h3{
     margin: 0 auto;
+}
+
+.slider_on{
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+  .nav > li > a{
+    padding: 10px 4px;
+    line-height: 30px;
+  }
+}
+
+a:focus{
+  outline: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+
+.banner_header{
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../images/banner-desktop-small.png');
+}
+
+.banner_header a{
+  height: 131px;
+  display: block;
+}
+
+@media (min-width: 1921px){
+  .banner_header{
+    background-image: url('../images/banner-desktop-large.png');
+  }
+}
+
+@media (min-width: 2200px){
+  .banner_header a{
+    height: 262px;
+  }
+}
+
+#nick.form-control{
+  width: 240px;
 }

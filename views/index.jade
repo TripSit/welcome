@@ -59,14 +59,14 @@ block content
 
       window.location = 'https://chat.tripsit.me/'+kiwi+'/?a=1&nick='+nick+'&'+channels;
     }
-  .container-fluid(style="margin-top:2%;")
+  .container-fluid
     .alert.alert-warning(style='text-align:center') Do you use a VPN? Try using 
-      a(href="https://wiki.tripsit.me/wiki/IRC_User_Guide#Set_up_SASL") SASL with a desktop client
+      a(target="_blank" href="https://wiki.tripsit.me/wiki/IRC_User_Guide#Set_up_SASL") SASL with a desktop client
       span  to avoid broad VPN abuse bans.
     .jumbotron
       center 
        .row
-        .col-xs-12.col-md-4.col-md-offset-4
+        .col-md-12
           .bs-callout
             p(style='font-size:24px;line-height: 140%;') Welcome to TripSit Chat
             p You're with friends here.
@@ -117,38 +117,52 @@ block content
               button#tripsitterjoin.btn.bs-callout.bsbutton.bs-callout-trip.disabled(onclick='javascript:go("helper")')
                 h3 Join TripSit as a helper
               
-      .bs-callout.bs-callout(style='margin-bottom:5px;')
-        h4(style='text-align:center;margin-bottom:0px;') Other Channels
+      
       center 
         .container
           .row
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
-                h3 Stim Chat
-                p Chat on and about stimulants
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-opiate(onclick='javascript:go("opiates")')
-                h3 Opiates Chat
-                p Chat about opiates and addiction
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-psychonaut(onclick='javascript:go("psychonaut")')
-                h3 Psychonautics Chat
-                p Spiritual, mindful chat
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-music(onclick='javascript:go("music")')
-                h3 Music Chat
-                p Share and discover music
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-contrib(onclick='javascript:go("contrib")')
-                h3 Contribution & Feedback
-                p Share suggestions and feedback here
-            .col-xs-12.col-md-4
-              button.btn.bs-callout.bsbutton.bs-callout-help(onclick='javascript:go("help")')
-                h3 IRC/Network Help
-                p Receive help for TripSit-IRC issues
+            .col-md-8
+              .bs-callout.bs-callout(style="margin-bottom:0")
+                h3.text-center Other Channels
+              .row
+                .col-md-6
+                  .row
+                    .col-md-12
+                      button.btn.bs-callout.bsbutton.bs-callout-stim(onclick='javascript:go("stims")')
+                        h3 Stim Chat
+                        p Chat on and about stimulants
+                    .col-md-12
+                      button.btn.bs-callout.bsbutton.bs-callout-opiate(onclick='javascript:go("opiates")')
+                        h3 Opiates Chat
+                        p Chat about opiates and addiction
+                    div.clearfix
+                .col-md-6
+                  .row  
+                    .col-md-12
+                      button.btn.bs-callout.bsbutton.bs-callout-psychonaut(onclick='javascript:go("psychonaut")')
+                        h3 Psychonautics Chat
+                        p Spiritual, mindful chat
+                    .col-md-12
+                      button.btn.bs-callout.bsbutton.bs-callout-music(onclick='javascript:go("music")')
+                        h3 Music Chat
+                        p Share and discover music
+                    div.clearfix
+            .col-md-4
+              .bs-callout.bs-callout(style="margin-bottom:0")
+                h3.text-center Staff Contacts     
+              .row
+                .col-md-12
+                  button.btn.bs-callout.bsbutton.bs-callout-contrib(onclick='javascript:go("contrib")')
+                    h3 Contribution & Feedback
+                    p Share suggestions and feedback here
+                .col-md-12
+                  button.btn.bs-callout.bsbutton.bs-callout-help(onclick='javascript:go("help")')
+                    h3 IRC/Network Help
+                    p Receive help for TripSit-IRC issues
+                div.clearfix
       center
         .bs-callout.bs-callout
           p(style='font:14px;') Remember to be kind to your fellow trippers, and don't name drug sources. Read the full rules 
-            a(href='https://wiki.tripsit.me/wiki/Rules') here
+            a(target="_blank" href='https://wiki.tripsit.me/wiki/Rules') here
             span .
-        a(href='https://chat.tripsit.me/chat/') Click here for the regular login page
+        a(target="_blank" href='https://chat.tripsit.me/chat/') Click here for the regular login page

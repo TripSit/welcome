@@ -15,11 +15,8 @@ html
     title TripSit Chat
 body
      
-     center
-      a(href='/')
-        picture
-          source.banner(media='(min-width:1921px)', srcset='images/banner-desktop-large.png')
-          img.banner(src='images/banner-desktop-small.png')
+     div.banner_header
+      a(href='https://tripsit.me')
      nav.navbar.navbar-inverse.navbar-static-top(style="padding:0;margin:0;")
        .container-fluid
         .navbar-header
@@ -35,7 +32,9 @@ body
              label.switch
               input(type="checkbox", onClick="changeCss()", id="switch", value="Style") 
               span.slider 
-               p#switchText ON       OFF
+               div#switchText
+                span.slider_on ON
+                span.slider_off OFF
         .collapse.navbar-collapse#bs-navbar-collapse
          ul.nav.navbar-nav.navbar-right
             li.choice
