@@ -4,6 +4,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*line-height: 120%;*/
 }
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .banner {
    max-width: 100%;
 }
