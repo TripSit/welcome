@@ -59,14 +59,14 @@ block content
 
       window.location = 'https://chat.tripsit.me/'+kiwi+'/?a=1&nick='+nick+'&'+channels;
     }
-  .container-fluid(style="margin-top:2%;")
+  .container-fluid
     .alert.alert-warning(style='text-align:center') Do you use a VPN? Try using 
       a(target="_blank" href="https://wiki.tripsit.me/wiki/IRC_User_Guide#Set_up_SASL") SASL with a desktop client
       span  to avoid broad VPN abuse bans.
     .jumbotron
       center 
        .row
-        .col-xs-12.col-md-4.col-md-offset-4
+        .col-md-12
           .bs-callout
             p(style='font-size:24px;line-height: 140%;') Welcome to TripSit Chat
             p You're with friends here.
@@ -117,8 +117,8 @@ block content
               button#tripsitterjoin.btn.bs-callout.bsbutton.bs-callout-trip.disabled(onclick='javascript:go("helper")')
                 h3 Join TripSit as a helper
               
-      .bs-callout.bs-callout(style='margin-bottom:5px;')
-        h4(style='text-align:center;margin-bottom:0px;') Other Channels
+      .bs-callout.bs-callout(style="margin-bottom:0")
+        h3.text-center Other Channels
       center 
         .container
           .row

@@ -220,9 +220,11 @@ input:checked + .slider:before {
   font-size:10px;
 }
 .bsbutton {
-  border-radius:25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   height:100%;
-  margin:5px;
+  margin: 0 20px 20px 0;
 }
 .jumbotron p {
 font-size:15px;
@@ -467,4 +469,8 @@ a:focus{
   .banner_header a{
     height: 262px;
   }
+}
+
+#nick.form-control{
+  width: 240px;
 }
