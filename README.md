@@ -20,3 +20,5 @@ When you get this:
 ```
 
 it means the app is running and you can access it through the link: `http://localhost:[the port from www]/`
+
+Note: this will run the Express server in development mode. Set the `NODE_ENV=production` variable prior to starting it for production mode.
