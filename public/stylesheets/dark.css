@@ -37,7 +37,6 @@ a {
    border-left: 0px;
 }
 
-
 .navbar {
   background-color: #000;
 }
@@ -74,15 +73,6 @@ a {
  */
 
 /* Switch that toggles theme */
-
-#switchText {
-  color: #3a8bcc;
-  text-align: center;
-  font-size: 10px;
-  padding-top: 8px;
-}
-
-
 
 .slider:before {
   background-color: #3a8bcc;
@@ -156,17 +146,12 @@ input:checked + .slider:before {
   background-color: #fffacb;
   border-color: #827700;
 }
+
 .subtex {
   line-height:150%;
   font-size:10px;
 }
-.bsbutton {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  height:100%;
-  margin: 0 20px 20px 0;
-}
+
 .jumbotron p {
 font-size:15px;
 }
@@ -357,4 +342,17 @@ border-color:#FFFF9D;
 
 .col-xs-12.col-md-3 ,h3 {
   margin: 0 auto;
+}
+
+.modal-content{
+  background-color: black;
+  border: 1px solid #cccccc;
+}
+
+button.close{
+  color: white;
+}
+
+button.close:hover{
+  color: white;
 }

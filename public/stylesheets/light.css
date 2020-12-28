@@ -126,11 +126,12 @@ td {
   -webkit-transition: .4s;
   transition: .4s;
 }
+
 #switchText {
   color: #428bca;
   text-align: center;
   font-size: 10px;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .slider:before {
@@ -222,10 +223,12 @@ input:checked + .slider:before {
   background-color: #fffacb;
   border-color: #827700;
 }
+
 .subtex {
   line-height:150%;
   font-size:10px;
 }
+
 .bsbutton {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -233,6 +236,7 @@ input:checked + .slider:before {
   height:100%;
   margin: 0 20px 20px 0;
 }
+
 .jumbotron p {
 font-size:15px;
 }
@@ -480,4 +484,22 @@ a:focus{
 
 #nick.form-control{
   width: 240px;
+}
+
+#tripsitterjoin{
+  width: 80%;
+}
+
+.modal-footer{
+  text-align: center;
+}
+
+button.close{
+  color: black;
+  opacity: 70%;
+  text-shadow: none;
+}
+
+button.close:hover{
+  color: black;
 }
