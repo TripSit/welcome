@@ -462,7 +462,7 @@ a:focus{
 .banner_header{
   background-size: cover;
   background-position: center center;
-  background-image: url('../images/banner-desktop-small.png');
+  background-image: url('../images/tripsit-chat-progressive-60.jpg');
 }
 
 .banner_header a{
@@ -470,11 +470,13 @@ a:focus{
   display: block;
 }
 
+/*
 @media (min-width: 1921px){
   .banner_header{
     background-image: url('../images/banner-desktop-large.png');
   }
 }
+*/
 
 @media (min-width: 2200px){
   .banner_header a{
