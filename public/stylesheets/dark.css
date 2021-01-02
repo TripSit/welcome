@@ -14,10 +14,6 @@ body {
 }
 /* place holder while the theme is applied in the background */
 
-.banner{
-  max-width: 100%;
-}
-
 .jumbotron{
   background-color: black;
   border: 0px !important;
