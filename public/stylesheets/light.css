@@ -29,6 +29,17 @@ body {
 
 #bannerlogo{
   position: absolute;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 350px){
+  #bannerlogo{
+    height: 100px;
+
+  }
 }
 
 a {
@@ -484,4 +495,8 @@ button.close{
 
 button.close:hover{
   color: black;
+}
+
+#banner{
+  position: relative;
 }

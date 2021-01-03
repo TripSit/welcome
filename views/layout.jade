@@ -14,12 +14,13 @@ html
     
     title TripSit Chat
 body
-     div#banner
-         a(href='https://tripsit.me')
-           img#bannerlogo(src='images/tripsit_logo.svg', height='120')
-           picture
-             source.banner(srcset='images/banner-3400-120-80q-progressive.jpg', media='(min-width: 1921px)')
-             img.banner(src='images/banner-1920-120-80q-progressive.jpg')
+
+    a(href='https://tripsit.me')
+      div#banner
+        img#bannerlogo(src='images/tripsit_logo.svg')
+        picture
+          source.banner(srcset='images/banner-3400-120-80q-progressive.jpg', media='(min-width: 1921px)')
+          img.banner(src='images/banner-1920-120-80q-progressive.jpg')
      nav.navbar.navbar-inverse.navbar-static-top(style="padding:0;margin:0;")
        .container-fluid
         .navbar-header
