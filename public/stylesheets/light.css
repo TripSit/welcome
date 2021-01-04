@@ -27,6 +27,12 @@ body {
   object-fit: cover;
 }
 
+#banner{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 #bannerlogo{
   position: absolute;
   height: 120px;
@@ -38,7 +44,6 @@ body {
 @media (max-width: 350px){
   #bannerlogo{
     height: 100px;
-
   }
 }
 
@@ -495,8 +500,4 @@ button.close{
 
 button.close:hover{
   color: black;
-}
-
-#banner{
-  position: relative;
 }
