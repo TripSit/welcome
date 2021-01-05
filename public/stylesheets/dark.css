@@ -98,10 +98,10 @@ input:checked + .slider:before {
 .nav-text{
   color: #cccccc;
 }
+
 /*
  * Placeholder dashboard ideas
  */
-
 .placeholders {
   margin-bottom: 30px;
   text-align: center;
@@ -117,27 +117,21 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 /* Base styles (regardless of theme) */
 .alert-warning {
   background-color: rebeccapurple;
   background-image: linear-gradient(to bottom,#7c00b6 0,#9105c9 100%);
   border-color: #7c00b6;
   color: white;
-
 }
-
-
 
 .bs-callout {
   background-color: black;
 }
-
 .bs-callout code,
 .bs-callout .highlight {
   background-color: #fff;
 }
- 
 .bs-callout-caution {
   background-color: #fffacb;
   border-color: #827700;
@@ -160,7 +154,6 @@ font-size:15px;
 .bs-callout-gen {
   background-color: #d1920a;
 }
-
 .bs-callout-stim {
 background-color: white;
 }
@@ -202,6 +195,7 @@ background-color: #34b6e1;
 .bs-callout-help{
 background-color: #34b6e1;
 }
+
 /* Themes for different contexts */
 .bs-callout-danger {
   background-color: #fdc9cc;
@@ -266,7 +260,6 @@ border-color:#FFFF9D;
 .phaedra-colors .label {
   color: #001713;
 }
-
 .phaedra-colors .label-default {
   background-color: #95a5a6;
 }
@@ -322,18 +315,9 @@ border-color:#FFFF9D;
 .btn{
     text-shadow: none;
     color: #2d2828;
-   /*
-    transform: scale(1.0);
-    transition: transform 1s;
-   */
 }
-
 .btn:hover {
   color: #f1f1f8e6;
-  /*
-  transform: scale(1.1);
-  transition: transform 1s;
-  */
 }
 
 .col-xs-12.col-md-3 ,h3 {
@@ -348,7 +332,6 @@ border-color:#FFFF9D;
 button.close{
   color: white;
 }
-
 button.close:hover{
   color: white;
 }

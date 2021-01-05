@@ -152,7 +152,7 @@ td {
   color: #428bca;
   text-align: center;
   font-size: 10px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .slider:before {
@@ -205,7 +205,6 @@ input:checked + .slider:before {
 /*
  * Placeholder dashboard ideas
  */
-
 .placeholders {
   margin-bottom: 30px;
   text-align: center;
@@ -220,7 +219,6 @@ input:checked + .slider:before {
   display: inline-block;
   border-radius: 50%;
 }
-
 
 /* Base styles (regardless of theme) */
 .bs-callout {
@@ -271,7 +269,6 @@ font-size:15px;
 
 .btn{
     white-space: normal;
-    margin:5px;
     width:100%;
     text-shadow: none;
     color: #2d2828;
