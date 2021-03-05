@@ -1,0 +1,34 @@
+{
+  "name": "welcome-tripsit",
+  "version": "0.0.0",
+  "description": "This serves the channel overview page on https://chat.tripsit.me/ and welcomes users to our chatrooms.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripsit/welcome.git"
+  },
+  "keywords": [
+    "tripsit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripsit/welcome/issues"
+  },
+  "homepage": "https://github.com/tripsit/welcome#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "^2.6.9",
+    "express": "^4.17.1",
+    "moniker": "^0.1.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.5.0",
+    "underscore": "^1.12.0"
+  }
+}
