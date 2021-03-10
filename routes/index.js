@@ -15,7 +15,7 @@ console.log(req.headers);
     'json': true
   }, function(request, response, body) {
     if (response) {
-        if (response.statusCode == 201 || response.statusCode == 200) {
+        if (response.statusCode == 201 || response.statusCode == 200 && response.body.data != null) {
         _.each(body.data[0], function(count, chan) {
           if(count < leastCount) {
             leastChan = chan.split('.')[1];
@@ -25,8 +25,8 @@ console.log(req.headers);
 
         } else {
           console.log('error conecting to API: ' + response.statusCode);
+          console.log('error msg: ' + response.body.err);
         }
-
     } else {
         console.log('no response received from request: ' + request);
     }
